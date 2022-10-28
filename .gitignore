@@ -1,2 +1,3 @@
-/SnakeGame/*.exe
-/Calculator/*.exe
+Calculator/
+SnakeGame/
+/*.exe
