@@ -23,12 +23,13 @@ def rotate_left(l,n):
         while(i<n):
             temp.append(l[i])
             i+=1
-        j = 0
-        while(n<len(l)):
-            l[j] = l[n]
-            n += 1
-            j += 1
-        return l[:j] + temp[:]
+        # j = 0
+        # while(n<len(l)):
+        #     l[j] = l[n]
+        #     n += 1
+        #     j += 1
+        # return l[:j] + temp[:]
+        return l[i:] + temp[:]
 
 n = int(input('No of rotation:'))
 l2 = [1,2,3,4,5,6,7,8]
