@@ -1,5 +1,9 @@
 /Calculator/
 /SnakeGame/
-**/*.exe
 **/.cph/
+**/.ipynb_checkpoints/
+**/*.exe
 **/*.txt
+**/*.img
+**/*.png
+**/*.svg
