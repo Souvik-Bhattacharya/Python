@@ -1,3 +1,5 @@
 /Calculator/
 /SnakeGame/
-/*.exe
+*.exe
+.cph/
+*.txt
