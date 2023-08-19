@@ -11,7 +11,7 @@ import random
 import numpy as np
 
 
-img = Image.open('westbengal.png')
+img = Image.open('./static/westbengal.png')
 rgb_img = img.convert('RGB')
 count_in = 0
 count_wb = 0
@@ -31,7 +31,7 @@ area_wb = (count_wb/count_in)*3287263
 print(area_wb)
 
 '''
-img = imageio.imread("westbengal.png")
+img = imageio.imread("./static/westbengal.png")
 count_in = 0
 count_wb = 0
 count = 0

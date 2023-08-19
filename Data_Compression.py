@@ -7,9 +7,9 @@ Created on Sat Apr 16 21:45:43 2022
 
 import numpy
 from PIL import Image
-im = Image.open('image.png')
+im = Image.open('./static/image.png')
 pixelmap = im.load()
-I = numpy.asanyarray(Image.open('image.png'))
+I = numpy.asanyarray(Image.open('./static/image.png'))
 img = Image.new(im.mode,im.size)
 pixel_new_map = img.load()
 '''
@@ -41,5 +41,5 @@ for i in range(img.size[0]):
             pixel_new_map[i,j] = 6
         elif(pixelmap[i,j]>=224 and pixelmap[i,j]<=255):
             pixel_new_map[i,j] = 7
-img.save('image_new.png')
-J = numpy.asanyarray(Image.open('image_new.png'))
+img.save('./static/image_new.png')
+J = numpy.asanyarray(Image.open('./static/image_new.png'))

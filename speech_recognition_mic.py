@@ -6,7 +6,7 @@ Created on Sun Mar 20 21:41:10 2022
 """
 
 import speech_recognition as sr
-#A=("audio.wav")
+#A=("./static/audio.wav")
 r=sr.Recognizer()
 with sr.Microphone() as source:
     print('say')

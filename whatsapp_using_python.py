@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
-driver = webdriver.Chrome("C:\\Users\Souvik Bhattacharya\.spyder-py3\chromedriver.exe")
+driver = webdriver.Chrome("C:\\Users\Souvik Bhattacharya\Python\static\chromedriver.exe")
 driver.get("https://web.whatsapp.com/")
 wait=WebDriverWait(driver,600)
 target = '"Samya"'

@@ -13,16 +13,16 @@ height = 5
 widh = 5
 array1 = np.zeros([height,widh,3],dtype = np.uint8)
 img = Image.fromarray(array1)
-img.save('test0.png')
+img.save('./static/test0.png')
 
 array2 = np.zeros([100,200,3],dtype = np.uint8)
 array2[:,:100] = [255,128,0] #orange
 array2[:,100:] = [0,0,255] #blue
 im = Image.fromarray(array2)
-im.save('test1.png')
+im.save('./static/test1.png')
 
 #determination of RGB value of an image
-I = Image.open('test1.png')
+I = Image.open('./static/test1.png')
 RGB_I = I.convert('RGB')
 rgb = RGB_I.getpixel((1,1))
 print(rgb)
