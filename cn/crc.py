@@ -6,15 +6,12 @@ def send(data, key):
 
     temp = []
 
-    dataLen = len(data)
     keyLen = len(key)
 
     for i in range(0, keyLen - 1):
         data.append(0)
 
     dataLen = len(data)
-
-    temp = []
 
     index = 0
 
@@ -37,7 +34,7 @@ def send(data, key):
     
     temp.pop(0)
 
-    for i in range(dataLen - keyLen - 1, dataLen):
+    for i in range(dataLen - keyLen + 1, dataLen):
         data[i] = temp[i - dataLen + keyLen - 1]
     
     data = [str(i) for i in data]
@@ -50,15 +47,12 @@ def receive(data, key):
 
     temp = []
 
-    dataLen = len(data)
     keyLen = len(key)
 
     for i in range(0, keyLen - 1):
         data.append(0)
 
     dataLen = len(data)
-
-    temp = []
 
     index = 0
 
